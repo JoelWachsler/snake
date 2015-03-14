@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SnookiZnoo</title>
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: arial;
+	}
+	body {
+		background-color: rgb(46, 155, 138);
+		overflow: hidden;
+	}
+	canvas {
+		border: 1px black solid;
+	}
+	div#game {
+		margin-left: 5%;
+		margin-top: 2%;
+		float: left;
+	}
+	div#menu {
+		display: block;
+		margin-top: 100px;
+		border: none;
+		width: 200px;
+		float: left;
+		padding-left: 10px;
+	}
+	.score {
+		font-size: 40px;
+		font-weight: bold;
+	}
+	iframe {
+		border: none;
+		width: 270px;
+		height: 400px;
+	}
+	#tip {
+		float: left;
+		padding-left: 10px;
+		font-weight: bold;
+	}
+	#test {
+		position: absolute;
+		top: -50px;
+		left: -50px;
+	}
+	</style>
+</head>
+<body>
+	<div id="container">
+		
+		<div id="game">
+			<canvas id="myCanvas" width="1000" height="600"></canvas>
+		</div>
+		<div id="menu">
+			<span class="score">Score:</span>
+			<span class="score" id="score">0</span>
+			<br />
+			<iframe src="score.php"></iframe>
+			<p id="tip">Tip: Hold left shift for boost.<br />Press "P" to pause.</p>
+		</div>
+
+	</div>
+	
+	<img id="test" src="img/fire.gif">
+	<img id="test" src="img/explosion.gif">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="snake.js"></script>
+</body>
+</html>
