@@ -1,2 +1,2 @@
 # snake
-The final project for the course "webbutveckling 2" - created 2013
+The final project for the course "webbutveckling 2" - inital creation 2013
