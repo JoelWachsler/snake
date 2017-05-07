@@ -21,7 +21,7 @@
 </head>
 <body>
 	<?php
-	$con=mysqli_connect("","joelwr","PW","joelwr");
+	$con=mysqli_connect("","dbname","password","table");
 	// Check connection
 	if (mysqli_connect_errno())
 	  {
